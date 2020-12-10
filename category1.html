@@ -1,152 +1,76 @@
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./css/main.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      />
-      <link
-        rel="shortcut icon"
-        href="./logo/Logo.png"
-        type="image/x-icon"
-      />
-      <title>Kodune Youtube</title>
-    </head>
-    <body>
-      <header class="header">
-          <a href="#"
-            ><img src="./logo/logo1.png" alt="gert logo" class="gert-logo" /></a
-          >
-          <form class="search-bar">
-            <input
-              class="search-input"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        />
+        <link
+          rel="shortcut icon"
+          href="./logo/Logo.png"
+          type="image/x-icon"
+        />
+        <title>Home Youtube</title>
+      </head>
+      <body>
+        <header class="header">
+            <a href="#"
+              ><img src="./logo/logo1.png" alt="gert logo" class="gert-logo" /></a
+            >
+            <form class="search-bar">
+              <input
+                class="search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button type="submit" class="search-button">
+                <img src="./logo/search-24px.svg" />
+              </button>
+            </form>
+            <div class="menu-icons">
+              <a href="#"
+              ><img src="./logo/video_call-24px.svg" alt="Upload video"
             />
-            <button type="submit" class="search-button">
-              <img src="./logo/search-24px.svg" />
-            </button>
-          </form>
-          <div class="menu-icons">
-            <a href="#"
-            ><img src="./logo/video_call-24px.svg" alt="Upload video"
-          />
-            <a href="#"
-              ><img src="./logo/apps-24px.svg" alt="apps"
+              <a href="#"
+                ><img src="./logo/apps-24px.svg" alt="apps"
+              />
+              <a href="#"
+              ><img src="./logo/bell-24px.svg" alt="bell"
             />
             <a href="#"
-            ><img src="./logo/bell-24px.svg" alt="bell"
-          />
-          <a href="#"
-          ><img class="menu-channel-icon" src="http:///unsplash.it/36/36?gravity=center" alt="Your Channel"
-        /></a>
+            ><img class="menu-channel-icon" src="http:///unsplash.it/36/36?gravity=center" alt="Your Channel"
+          /></a>
+            </div>
+          </header>
+          <div class="categories">
+            <section class="category-section">
+              <button class="category "><a href="./index.html">All</a></button>
+              <button class="category active">Category1</button>
+              <button class="category"><a href="category2.html">Category 2</a></button>
+              <button class="category"><a href="category3.html">Category 3</a></button>
+              <button class="category">Category 4</button>
+              <button class="category">Category 5</button>
+              <button class="category">Category 6</button>
+              <button class="category">Category 7</button>
+              <button class="category">Category 8</button>
+              <button class="category">Category 9</button>
+            </section>
           </div>
-        </header>
-        <div class="categories">
-          <section class="category-section">
-            <button class="category "><a href="./index.html">All</a></button>
-            <button class="category active">Category1</button>
-            <button class="category"><a href="category2">Category 2</a></button>
-            <button class="category"><a href="category3">Category 3</a></button>
-            <button class="category">Category 4</button>
-            <button class="category">Category 5</button>
-            <button class="category">Category 6</button>
-            <button class="category">Category 7</button>
-            <button class="category">Category 8</button>
-            <button class="category">Category 9</button>
-          </section>
-        </div>
-          <div class="container">
-            <!--siit hakkab videokaart (main)-->
-            <main>
-              <div class="card">
-              <div class="card-body">
-                <!--<h3 class="card-title">Tere See on minu videoplogi, Head Nautimist!</h3>-->
-                <p class="card-text"><video poster="/images/video_thumbs/suvi_eestis_2020.jpg" controls="controls" width="100%">
-                    <source
-                      src="videos/reisivideod/suvepuhkus_eestis_2020.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                  
-                  <div class="video-bottom-section esimene">
-                    <!--video all vasak sektsioon kus kasutaja pilt-->
-                    <a href="#"
-                      ><img
-                        class="channel-icon"
-                        src="./logo/kanali_ikoon.jpg"
-                        width="36"
-                        height="36"
-                    /></a>
-                    <!--Siit algab parem sektsioon kus video kirjeldused-->
-                    <div class="video-details">
-                      <a href="#" class="video-title">Suvepuhkus Eestis 2020</a>
-                      <a href="#" class="video-channel-name">KoduVideod</a>
-                      <div class="video-metadata">
-                        <span>16K Views</span>
-                        •
-                        <span>55 päeva tagasi</span>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                </div>
-              </div>
-            </main>
-
-            <!--Siit algab küljeriba (SIDEBAR)sektsioon-->
-
-            <div id="sidebar">
-              <br>
-              <h3 class="card-title side">Järgmised videod.....</h3>
-
-              <!--Siit Algab Videode osa-->
-              <article class="video-contaier">
-                <a
-                  href="./videos_reisivideod_heureka.html"
-                  class="thumbnail"
-                  data-duration="00:04:44"
-                  ><img
-                    class="thumbnail-image"
-                    src="./images/video_thumbs/heureka_kylastus.jpg"
-                  />
-                </a>
-                <div class="video-bottom-section">
-                  <!--video all vasak sektsioon kus kasutaja pilt-->
-                  <a href="#"
-                    ><img
-                      class="channel-icon"
-                      src="./logo/kanali_ikoon.jpg"
-                      width="36"
-                      height="36"
-                  /></a>
-                  <!--Siit algab parem sektsioon kus video kirjeldused-->
-                  <div class="video-details">
-                    <a href="#" class="video-title">Heureka Külastus 2020</a>
-                    <a href="#" class="video-channel-name">KoduVideod</a>
-                    <div class="video-metadata">
-                      <span>12K Views</span>
-                      •
-                      <span>20 päev tagasi</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-                <hr>
-                <article class="video-contaier">
-                    <a
-                      href="./videos/heureka_kylastus_2020.mp4"
-                      class="thumbnail"
-                      data-duration="00:04:44"
-                      ><img
-                        class="thumbnail-image"
-                        src="./images/video_thumbs/heureka_kylastus.jpg"
+            <div class="container">
+              <!--  Main left Video section -->
+              <main>
+                <div class="card">
+                <div class="card-body">
+                  <p class="card-text"><video poster="/images/video_thumbs/bee.jpg" controls="controls" width="100%">
+                      <source
+                        src="videos/category1/Bee - 37144.mp4"
+                        type="video/mp4"
                       />
-                    </a>
-                    <div class="video-bottom-section">
-                      <!--video all vasak sektsioon kus kasutaja pilt-->
+                    </video>
+                    <div class="video-bottom-section esimene">
+                      <!--Video below the left section where the user's picture-->
                       <a href="#"
                         ><img
                           class="channel-icon"
@@ -154,32 +78,75 @@
                           width="36"
                           height="36"
                       /></a>
-                      <!--Siit algab parem sektsioon kus video kirjeldused-->
+                      <!--Here begins the right section with video descriptions-->
                       <div class="video-details">
-                        <a href="#" class="video-title">Video Title</a>
-                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <a href="#" class="video-title">Bee...</a>
+                        <a href="https://pixabay.com/users/royburi-3128024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=37144" class="video-channel-name">Roy Buri</a>
                         <div class="video-metadata">
-                          <span>12K Views</span>
+                          <span>16K Views</span>
                           •
-                          <span>1 päev tagasi</span>
+                          <span>30 Days Ago</span>
                         </div>
                       </div>
                     </div>
-                  </article>
+                    <hr>
+                  </div>
+                </div>
+              </main>
+
+              <!--This is where the right sidebar starts -->
+
+              <div id="sidebar">
+                <br>
+                <h3 class="card-title side">Next Video...</h3>
+
+                <!--Next Video-->
+                <article class="video-contaier">
+                  <a
+                    href="./videos/category1/Fishing - 44534.mp4"
+                    class="thumbnail"
+                    data-duration="00:00:09"
+                    ><img
+                      class="thumbnail-image"
+                      src="./images/video_thumbs/fishing.jpg"
+                    />
+                  </a>
+                  <div class="video-bottom-section">
+                    <!--Below the video is the left section where the user's picture-->
+                    <a href="#"
+                      ><img
+                        class="channel-icon"
+                        src="./logo/kanali_ikoon.jpg"
+                        width="36"
+                        height="36"
+                    /></a>
+                    <!--Here begins the right section with video descriptions-->
+                    <div class="video-details">
+                      <a href="#" class="video-title">Fishing...</a>
+                      <a href="https://pixabay.com/users/malic_1-16268690/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=44534" class="video-channel-name">Joshua Malic</a>
+                      <div class="video-metadata">
+                        <span>12K Views</span>
+                        •
+                        <span>30 Days Ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                  <hr>
                   <br>
-                  <br>
+                  <!-- Next Video -->
                   <article class="video-contaier">
                       <a
-                        href="./videos/heureka_kylastus_2020.mp4"
+                        href="./videos/category1/Owl - 56136.mp4"
                         class="thumbnail"
-                        data-duration="00:04:44"
+                        data-duration="00:00:06"
                         ><img
                           class="thumbnail-image"
-                          src="./images/video_thumbs/heureka_kylastus.jpg"
+                          src="./images/video_thumbs/owl.jpg"
                         />
                       </a>
                       <div class="video-bottom-section">
-                        <!--video all vasak sektsioon kus kasutaja pilt-->
+                        <!--Below the video is the left section where the user's picture-->
                         <a href="#"
                           ><img
                             class="channel-icon"
@@ -187,10 +154,10 @@
                             width="36"
                             height="36"
                         /></a>
-                        <!--Siit algab parem sektsioon kus video kirjeldused-->
+                        <!--Here begins the right section with video descriptions-->
                         <div class="video-details">
-                          <a href="#" class="video-title">Video Title</a>
-                          <a href="#" class="video-channel-name">Channel Name</a>
+                          <a href="#" class="video-title">Owl Flight...</a>
+                          <a href="https://pixabay.com/users/dlabiebrzy-16788253/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=56136" class="video-channel-name">Fundacja Dla Biebrzy</a>
                           <div class="video-metadata">
                             <span>12K Views</span>
                             •
@@ -201,51 +168,19 @@
                     </article>
                     <br>
                     <br>
-                    <article class="video-contaier">
-                      <a
-                        href="./videos/2019_suvine_soome.mp4"
-                        class="thumbnail"
-                        data-duration="00:04:44"
-                        ><img
-                          class="thumbnail-image"
-                          src="./images/video_thumbs/Untitled.jpg"
-                        />
-                      </a>
-                      <div class="video-bottom-section">
-                        <!--video all vasak sektsioon kus kasutaja pilt-->
-                        <a href="#"
-                          ><img
-                            class="channel-icon"
-                            src="./logo/kanali_ikoon.jpg"
-                            width="36"
-                            height="36"
-                        /></a>
-                        <!--Siit algab parem sektsioon kus video kirjeldused-->
-                        <div class="video-details">
-                          <a href="#" class="video-title">Video Title</a>
-                          <a href="#" class="video-channel-name">Channel Name</a>
-                          <div class="video-metadata">
-                            <span>12K Views</span>
-                            •
-                            <span>1 päev tagasi</span>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-                    <br>
-                    <br>
+                    <!-- Next Video -->
                     <article class="video-contaier">
                         <a
-                          href="./videos/heureka_kylastus_2020.mp4"
+                          href="./videos/category1/Bee - 37144.mp4"
                           class="thumbnail"
-                          data-duration="00:04:44"
+                          data-duration="00:00:23"
                           ><img
                             class="thumbnail-image"
-                            src="./images/video_thumbs/heureka_kylastus.jpg"
+                            src="./images/video_thumbs/bee.jpg"
                           />
                         </a>
                         <div class="video-bottom-section">
-                          <!--video all vasak sektsioon kus kasutaja pilt-->
+                          <!--Below the video is the left section where the user's picture-->
                           <a href="#"
                             ><img
                               class="channel-icon"
@@ -253,79 +188,81 @@
                               width="36"
                               height="36"
                           /></a>
-                          <!--Siit algab parem sektsioon kus video kirjeldused-->
+                          <!--Here begins the right section with video descriptions-->
                           <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel Name</a>
+                            <a href="#" class="video-title">Bee...</a>
+                            <a href="https://pixabay.com/users/royburi-3128024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=37144" class="video-channel-name">Roy Buri</a>
                             <div class="video-metadata">
                               <span>12K Views</span>
                               •
-                              <span>1 päev tagasi</span>
+                              <span>30 Days Ago</span>
                             </div>
                           </div>
                         </div>
                       </article>
                       <br>
                       <br>
+                      <!-- Next Video -->
                       <article class="video-contaier">
-                          <a
-                            href="./videos/heureka_kylastus_2020.mp4"
-                            class="thumbnail"
-                            data-duration="00:04:44"
+                        <a
+                          href="./videos/category1/Owl - 56136.mp4"
+                          class="thumbnail"
+                          data-duration="00:00:06"
+                          ><img
+                            class="thumbnail-image"
+                            src="./images/video_thumbs/owl.jpg"
+                          />
+                        </a>
+                        <div class="video-bottom-section">
+                          <!--Below the video is the left section where the user's picture-->
+                          <a href="#"
                             ><img
-                              class="thumbnail-image"
-                              src="./images/video_thumbs/heureka_kylastus.jpg"
-                            />
-                          </a>
-                          <div class="video-bottom-section">
-                            <!--video all vasak sektsioon kus kasutaja pilt-->
-                            <a href="#"
-                              ><img
-                                class="channel-icon"
-                                src="./logo/kanali_ikoon.jpg"
-                                width="36"
-                                height="36"
-                            /></a>
-                            <!--Siit algab parem sektsioon kus video kirjeldused-->
-                            <div class="video-details">
-                              <a href="#" class="video-title">Video Title</a>
-                              <a href="#" class="video-channel-name">Channel Name</a>
-                              <div class="video-metadata">
-                                <span>12K Views</span>
-                                •
-                                <span>1 päev tagasi</span>
-                              </div>
+                              class="channel-icon"
+                              src="./logo/kanali_ikoon.jpg"
+                              width="36"
+                              height="36"
+                          /></a>
+                          <!--Here begins the right section with video descriptions-->
+                          <div class="video-details">
+                            <a href="#" class="video-title">Owl Flight...</a>
+                            <a href="https://pixabay.com/users/dlabiebrzy-16788253/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=56136" class="video-channel-name">Fundacja Dla Biebrzy</a>
+                            <div class="video-metadata">
+                              <span>12K Views</span>
+                              •
+                              <span>30 Days Ago</span>
                             </div>
                           </div>
-                        </article>
-                      </div>
-              
-            <!--Siit algab kommentaari sektsioon-->
-            <div id="comment">
-              <!--video all vasak sektsioon kus kasutaja pilt-->
-              <a href="#"
-              ><img
-                class="channel-icon"
-                src="./logo/kanali_ikoon.jpg"
-                width="36"
-                height="36"
-            /></a><strong>Loripsum dolor</strong><br> sit amet consectetur adipisicing elit. Impedit assumenda excepturi voluptate! Excepturi dolores tempore, ea facilis a eum dolore enim nemo temporibus delectus consectetur libero asperiores? Rem, saepe atque!
-            <p><!--video all vasak sektsioon kus kasutaja pilt-->
-              <a href="#"
-              ><img
-                class="channel-icon"
-                src="./logo/kanali_ikoon.jpg"
-                width="36"
-                height="36"/></a>
-                <strong>Lorem ipsum dolor</strong><br> sit amet, consectetur adipisicing elit. Reiciendis debitis iste, porro cumque architecto unde nemo, nulla repellat recusandae, voluptate exercitationem quae ipsum? Minima non laboriosam numquam fuga cumque voluptate?</p><br>
-            <p><p><!--video all vasak sektsioon kus kasutaja pilt-->
-              <a href="#"
-              ><img
-                class="channel-icon"
-                src="./logo/kanali_ikoon.jpg"
-                width="36"
-                height="36"/></a>
-                <strong>Lorem ipsum dolor sit </strong><br>amet consectetur adipisicing elit. Autem a, optio tenetur, molestiae reprehenderit unde beatae sapiente quod ut nobis temporibus sequi aliquid enim. Similique placeat voluptates et cumque ratione!</p></div>
-          </div>
-    </body>
-  </html>
+                        </div>
+                      </article>
+                      <br>
+                      <br>
+              </div>
+              <!--This is where the comment section begins-->
+              <div id="comment">
+                <!--Below the video is the left section where the user's picture-->
+                <a href="#"
+                ><img
+                  class="channel-icon"
+                  src="./logo/kanali_ikoon.jpg"
+                  width="36"
+                  height="36"
+              /></a><strong>Loripsum dolor</strong><br> sit amet consectetur adipisicing elit. Impedit assumenda excepturi voluptate! Excepturi dolores tempore, ea facilis a eum dolore enim nemo temporibus delectus consectetur libero asperiores? Rem, saepe atque!
+              <p><!--Below the video is the left section where the user's picture-->
+                <a href="#"
+                ><img
+                  class="channel-icon"
+                  src="./logo/kanali_ikoon.jpg"
+                  width="36"
+                  height="36"/></a>
+                  <strong>Lorem ipsum dolor</strong><br> sit amet, consectetur adipisicing elit. Reiciendis debitis iste, porro cumque architecto unde nemo, nulla repellat recusandae, voluptate exercitationem quae ipsum? Minima non laboriosam numquam fuga cumque voluptate?</p><br>
+              <p><p><!--Below the video is the left section where the user's picture-->
+                <a href="#"
+                ><img
+                  class="channel-icon"
+                  src="./logo/kanali_ikoon.jpg"
+                  width="36"
+                  height="36"/></a>
+                  <strong>Lorem ipsum dolor sit </strong><br>amet consectetur adipisicing elit. Autem a, optio tenetur, molestiae reprehenderit unde beatae sapiente quod ut nobis temporibus sequi aliquid enim. Similique placeat voluptates et cumque ratione!</p></div>
+            </div>
+      </body>
+    </html>

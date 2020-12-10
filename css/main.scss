@@ -15,11 +15,11 @@ body {
   gap: 3rem 1rem;
   padding: 3rem 0;
   margin: 0 1.5rem;
-  border-top: 4px solid #ccc; /*see teeb vido kohale halli joone mis eraldab videosektsioonid*/
+  border-top: 4px solid #ccc; /*This draws a gray line above the video that separates the video sections*/
 }
 
 .video-section:first-child {
-  border-top: none; /*see võtab selle halli joone esimeselt videorealt ära ja suunab selle alla*/
+  border-top: none; /*This removes this gray line from the first line of the video and directs it down*/
 }
 .video-container {
   display: flex;
@@ -30,7 +30,7 @@ body {
   position: relative;
   display: flex;
 }
-/* see osa lisab ajatempli pildile e. paremale nurka lisab kella aja kui pikk video on*/
+/*This section adds a timestamp to the image e. the right corner adds the clock time to how long the video is*/
 .thumbnail::before {
   content: attr(data-duration);
   position: absolute;
@@ -47,7 +47,7 @@ body {
   height: 100%;
   min-width: 250px;
   min-height: 150px;
-  background-color: #aaaaaa; /*see hall värv on sellepärast et kui leht alles laeb pilti siis taustaks on ilus hall põhi*/
+  background-color: #aaaaaa; /*This gray color is because if the page is still loading the image then the background is a beautiful gray base*/
 }
 
 .video-bottom-section {
@@ -60,7 +60,7 @@ body {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  background-color: #aaaaaa; /*lehe laadimis taust*/
+  background-color: #aaaaaa; /*Page loading background if no image has been loaded yet*/
 }
 .video-details {
   display: flex;
@@ -76,10 +76,9 @@ body {
 .video-channel-name {
   margin-bottom: 0.1rem;
   text-decoration: none;
-  transition: color 150ms; /*see muudab värvi vahetuskiirust kui hiirega tekstile liigud*/
+  transition: color 150ms; /*This changes the color change rate as you move the text with the mouse*/
 }
 .video-channel-name:hover {
-  /*siin siis tee värv mis hiirega liikudes tekstile tuleb*/
   color: #111111;
 }
 
@@ -88,10 +87,10 @@ body {
   color: #555555;
 }
 .video-section-title {
-  grid-column: 1 /-1; /*see paneb pealkirja Teisel sektsioonil kus on ka sulgemis nupp ühele reale, ükskõik kui suureks me ekraani teeme*/
-  margin: -0.5rem 0; /*teeb pealkirja vahe väiksemaks*/
+  grid-column: 1 /-1; /*This puts a title in the Second section where there is also a close button on one line, no matter how big we make the screen*/
+  margin: -0.5rem 0; /*Makes the title gap smaller*/
   display: flex;
-  justify-content: space-between; /*See rida lükkab X nupu paremale nurka */
+  justify-content: space-between; /*This line pushes the X button to the right corner */
   align-items: center;
   padding: 0 0.5rem;
 }
@@ -106,7 +105,7 @@ body {
 .videos {
   background-color: #f9f9f9;
 }
-/*Siit algab menüü või siis nuppude osa*/
+/*This is where the menu or the buttons starts*/
 .categories {
   padding: 1rem 2rem;
   border-top: 1px solid #999999;
@@ -114,7 +113,7 @@ body {
 }
 .category-section {
   display: flex;
-  overflow: hidden; /*see lõikab nupul lõpust nurga ära*/
+  overflow: hidden; /*This cuts the corner of the button at the end*/
 }
 
 .categories a {
@@ -156,24 +155,24 @@ body {
 .search-bar {
   display: flex;
   flex-grow: 1;
-  margin: 0 2rem 0 4rem; /*see annab ekstra ruumi logo ja otsingu väljale*/
+  margin: 0 2rem 0 4rem; /*This gives extra space to the logo and search field*/
 }
 
 .search-input {
   width: 100%;
   font-size: inherit;
-  padding: 0.4em; /*teksile ruumi otsingukastis*/
+  padding: 0.4em; /*Space for text in the search box*/
   border: 1px solid #777777;
-  border-top-right-radius: 0; /*et otsingulogo ja kast oleksid samas mõõdus*/
+  border-top-right-radius: 0; /*So that the search logo and the box are the same size*/
   border-bottom-right-radius: 0;
 }
 .search-button {
   display: flex;
   align-items: center;
-  padding: 0 1.25rem; /*see paneb nüüd otsingu nupu ühele reale koos otsiribaga*/
+  padding: 0 1.25rem; /*This now puts the search button on one line with the search bar*/
   border: 1px solid #777777;
   background-color: #f8f8f8;
-  border-left: none; /*eemaldame kasti mõlemalt väljalt nii ostiribalt ja ikooni ümbert*/
+  border-left: none; /*We remove the box from both fields in the shopping bar and around the icon*/
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   cursor: pointer;
@@ -183,7 +182,7 @@ body {
 }
 .menu-icons {
   display: grid;
-  grid-template-columns: repeat(4, auto); /*sellega seame ikoonid ühele reale*/
+  grid-template-columns: repeat(4, auto); /*This puts the icons on one line*/
   align-items: center;
   gap: 1.5rem;
 }
@@ -197,14 +196,14 @@ a:link {
   text-decoration: none;
 }
 
-/*See võtab Otsinugriba ära kui lehte vähendada*/
+/*This removes the Search bar when the page is minimized*/
 @media (max-width: 720px) {
   .search-bar {
     display: none;
   }
 }
 
-/* Siit hakkab teise lehe stiil */
+/* This is where the style of the second page begins */
 
 @media (max-width: 720px) {
   .container {
@@ -249,7 +248,6 @@ main {
   background-color: #ffffff;
   grid-area: sidebar;
   grid-auto-rows: minmax(100px, auto);
-  /*overflow: auto; /*See paneb kõik korralikult kasti sisse*/
 }
 
 #comment {
@@ -257,7 +255,6 @@ main {
   background-color: #ffffff;
   grid-area: comment;
   grid-auto-rows: minmax(100px, auto);
-  /*padding: 20px;*/
 }
 
 .card-text {
